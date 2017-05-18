@@ -10,3 +10,4 @@ app:
 posts:
     type:     rest
     resource: BlogBundle\Controller\PostsController
+    prefix:   /api
