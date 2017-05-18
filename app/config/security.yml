@@ -1,6 +1,10 @@
 # To get started with security, check out the documentation:
 # http://symfony.com/doc/current/security.html
 security:
+    encoders:
+        # Our user class and the algorithm we'll use to encode passwords
+        # https://symfony.com/doc/current/security.html#c-encoding-the-user-s-password
+        BlogBundle\Entity\User: bcrypt
 
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
