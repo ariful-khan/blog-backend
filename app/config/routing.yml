@@ -6,3 +6,7 @@ blog:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+posts:
+    type:     rest
+    resource: BlogBundle\Controller\PostsController
